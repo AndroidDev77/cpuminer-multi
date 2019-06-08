@@ -162,7 +162,7 @@ _OR_
 #### Architecture-specific notes:
  * ARM:
    * No runtime CPU detection. The miner can take advantage of some instructions specific to ARMv5E and later processors, but the decision whether to use them is made at compile time, based on compiler-defined macros.
-   * To use NEON instructions, add `"-mfpu=neon"` to CFLAGS.
+   * To use NEON instructions, add `"-mfpu=neon"` to CFLAGS. Do not use on Raspberry Pi
  * x86:
    * The miner checks for SSE2 instructions support at runtime, and uses them if they are available.
  * x86-64:	
@@ -190,6 +190,9 @@ When the --proxy option is not used, the program honors the http_proxy and all_p
 Donations
 =========
 Donations for the work done in this fork are accepted :
+
+Raspberry Pi:
+* ETH: '0xe02126CB525A55a1Ac31a2DED99d8C73F006FB54'
 
 Tanguy Pruvot :
 * BTC: `1FhDPLPpw18X4srecguG3MxJYe4a1JsZnd`
